@@ -99,7 +99,7 @@ Install software packages and load necessary dynamic kernel modules for networki
 
 #### Setting up storage devices.
 
-First, Determine storage devices on nodes that will be used for object storage. To do that, login to one of the swift nodes, list all disks by executing __sudo fdisk -l__. Available disks will be in the form of __/dev/sd\<x>__ except __dev/sda__ since it hosts the Operating System.
+First, determine storage devices on nodes that will be used for object storage. To do that, login into one of the swift nodes, list all disks by executing __sudo fdisk -l__. Available disks will be in the form of __/dev/sd\<x>__ except __dev/sda__ since it hosts the Operating System.
 
 If you still on the swift node, log out and return to your deployment node under __/opt/osic-ref-impl/playbooks__ directory and add the correct disks names under disks list in __./vars/swift-disks.yml__
 
